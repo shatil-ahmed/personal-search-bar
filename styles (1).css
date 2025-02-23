@@ -1,0 +1,193 @@
+/* Basic Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f9f9f9;
+    line-height: 1.7;
+    color: #333;
+}
+
+/* Header Styling */
+header {
+    background: linear-gradient(90deg, #4e73df, #1abc9c); /* Gradient Background */
+    color: white;
+    text-align: center;
+    padding: 60px 20px;
+    border-bottom: 4px solid #1a2a43;
+}
+
+header h1 {
+    font-size: 3.8rem;
+    font-weight: bold;
+    margin-bottom: 15px;
+    letter-spacing: 2px;
+}
+
+header p {
+    font-size: 1.4rem;
+    font-weight: 400;
+}
+
+/* Navigation Bar Styling */
+nav {
+    display: flex;
+    justify-content: center;
+    background-color: #34495e;
+    padding: 15px;
+}
+
+nav a {
+    color: white;
+    padding: 12px 25px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    margin: 0 10px;
+    transition: all 0.3s ease;
+}
+
+nav a:hover {
+    background-color: #1abc9c;
+    color: white;
+    transform: scale(1.05);
+}
+
+/* Search Bar Section Styling */
+#search {
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 650px;
+    text-align: center;
+}
+
+#search h2 {
+    font-size: 2.5rem;
+    color: #333;
+    font-weight: bold;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#search input {
+    padding: 14px 22px;
+    width: 70%;
+    margin-right: 15px;
+    border-radius: 30px;
+    border: 2px solid #3498db;
+    font-size: 1.2rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+#search input:focus {
+    border-color: #1abc9c;
+    box-shadow: 0 0 8px rgba(26, 188, 156, 0.5);
+    outline: none;
+}
+
+#search button {
+    padding: 14px 28px;
+    background-color: #3498db;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.2rem;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+#search button:hover {
+    background-color: #1abc9c;
+    transform: scale(1.05);
+}
+
+/* Section Styling */
+section {
+    padding: 40px;
+    margin: 40px auto;
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    transition: transform 0.3s ease;
+}
+
+section:hover {
+    transform: scale(1.02);
+}
+
+section h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+section p {
+    font-size: 1.2rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+/* Footer Styling */
+footer {
+    background-color: #2a3d66;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 1.2rem;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+/* Media Query for Mobile Responsiveness */
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 2.8rem;
+    }
+
+    header p {
+        font-size: 1.1rem;
+    }
+
+    nav a {
+        padding: 10px 15px;
+        font-size: 1rem;
+        margin: 0 5px;
+    }
+
+    #search h2 {
+        font-size: 2rem;
+    }
+
+    #search input {
+        width: 60%;
+    }
+
+    #search button {
+        padding: 12px 24px;
+        font-size: 1rem;
+    }
+
+    section {
+        padding: 25px;
+        margin: 25px;
+    }
+
+    section h2 {
+        font-size: 2rem;
+    }
+
+    section p {
+        font-size: 1rem;
+    }
+}
